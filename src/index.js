@@ -37,7 +37,8 @@ class Server{
         this.app.use(morgan('dev'));
         this.app.use(bodyparser.urlencoded({extended:true}));
         this.app.use(bodyparser.json());
-        this.app.use(cors({origen: '*'}));
+        //this.app.use(cors({origen: '*'}));
+        this.app.use(cors());
 
         //Configurar ruta raíz
         let router = express.Router();
