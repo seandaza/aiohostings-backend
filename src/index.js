@@ -31,7 +31,7 @@ class Server{
     config(){
 
         //Indicar el puerto por el que se ejecutará el servidor
-        this.app.set('port', process.env.PORT || 3000);
+        //this.app.set('port', process.env.PORT || 3000);
         //Indicar el uso del formato json para enviar informacion con JSON
         this.app.use(express.json());
         this.app.use(morgan('dev'));
